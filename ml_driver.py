@@ -42,7 +42,8 @@ for classifier in classifiers:
         classifier.fit(X_train, y_train)
         classifier_score=np.append(classifier_score, classifier.score(X_test, y_test))
     scores=np.append(scores, classifier_score.mean())
-print scores
+
+
     
 
 
